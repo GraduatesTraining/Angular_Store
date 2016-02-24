@@ -1,0 +1,31 @@
+section
+
+  // Menu
+  ul.nav.nav-pills.tabs
+    li(ng-class="{active:panel.isSelected(1)}")
+      a.tabs(ng-click="panel.selectTab(1)") Description
+    li(ng-class="{active:panel.isSelected(2)}")
+      a.tabs(ng-click="panel.selectTab(2)") Specification
+    li(ng-class="{active:panel.isSelected(3)}")
+      a.tabs(ng-click="panel.selectTab(3)") Reviews
+      
+  // Description tab
+  .panel(ng-show="panel.isSelected(1)")
+    h4 Description
+    blockquote(ng-bind="product.description")
+    
+  // Specification tab
+  .panel(ng-show="panel.isSelected(2)")
+    h4 Specification
+    blockquote Non yet
+    
+  // Reviews tab
+  .panel(ng-show="panel.isSelected(3)")
+    h4 Reviews
+    blockquote(ng-repeat="review in product.reviews")
+      b(ng-bind="(review.stars) + ' Stars: '")
+      span(ng-bind="' ' + (review.body)")
+      cite(ng-bind="' - ' + (review.author) + ' (' + (review.createdOn | date) + ')'")
+      
+    // Review form
+    review-form

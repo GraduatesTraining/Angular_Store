@@ -1,0 +1,9 @@
+.text-center(ng-show="store.showCart")
+  h1 Cart
+  ul.list-group.main
+    li.list-group-item.cartList(ng-repeat="cartProduct in store.cart track by $index")
+      button.btn.cartButton(ng-click="store.deleteToCart(cartProduct)") Delete
+      span(ng-bind="cartProduct.name")
+      span.cartPrice(ng-bind="cartProduct.price | currency")
+    h3.cartPrice(ng-bind="'Total: ' + (store.totalCart | currency)")
+    input.btn.btn-primary.btn-lg.btn-block(type="submit" value="Finish")

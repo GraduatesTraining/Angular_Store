@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="store">
+  <head>
+    <title>This is the AngularJS Store</title>
+    <!-- Load Bootstrap and my style-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body id="ini" ng-controller="StoreController as store">
+    <!-- Head-->
+    <h1 class="text-center">The Angular.JS Store</h1>
+    <hr>
+    <!-- Cart-->
+    <store-cart></store-cart>
+    <!-- Filters-->
+    <store-filters></store-filters>
+    <!-- Product list-->
+    <ul class="list-group main mainList">
+      <li ng-repeat="product in store.products | orderBy: store.priceFilter()" ng-hide="product.soldOut" class="list-group-item">
+        <!-- Product title-->
+        <h3>
+          <product-title></product-title>
+        </h3>
+        <!-- Image Gallery-->
+        <img-gallery></img-gallery><br>
+        <!-- Product panel-->
+        <product-panel></product-panel>
+        <!-- Add to cart button-->
+        <button ng-disabled="!product.canPurchase" ng-click="store.addToCart(product)" class="btn btn-primary btn-lg btn-block">Add to Cart</button>
+      </li>
+    </ul>
+    <!-- Load Angular.JS and JS files-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
+    <!-- Load jQuery-->
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+  </body>
+</html>

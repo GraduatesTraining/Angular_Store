@@ -1,0 +1,171 @@
+[
+  {
+      "id": 0,
+      "name": "Gem 1",
+      "price": 2,
+      "description": "This is the description of the Gem 1.",
+      "canPurchase": true,
+      "soldOut": false,
+      "images":[
+          {
+              "id": 0,
+              "full": "img/full.gif",
+              "thumb": "img/thumb.gif"
+          },
+          {
+              "id": 1,
+              "full": "img/full-1.gif",
+              "thumb": "img/thumb-1.gif"
+          },
+          {
+              "id": 2,
+              "full": "img/full-2.gif",
+              "thumb": "img/thumb-2.gif"
+          },
+          {
+              "id": 3,
+              "full": "img/full-3.gif",
+              "thumb": "img/thumb-3.gif"
+          }
+      ],
+      "reviews":[
+          {
+              "stars": 5,
+              "body": "I love this product",
+              "author": "joe1@thomas.com"
+          },
+          {
+              "stars": 1,
+              "body": "This product sucks",
+              "author": "tim1@hater.com"
+          }
+      ]
+  },
+  {
+      "id": 1,
+      "name": "Gem 2",
+      "price": 5.95,
+      "description": "This is the description of the Gem 2.",
+      "canPurchase": true,
+      "soldOut": false,
+      "images":[
+          {
+              "id": 0,
+              "full": "img/full-1.gif",
+              "thumb": "img/thumb-1.gif"
+          },
+          {
+              "id": 1,
+              "full": "img/full.gif",
+              "thumb": "img/thumb.gif"
+          },
+          {
+              "id": 2,
+              "full": "img/full-2.gif",
+              "thumb": "img/thumb-2.gif"
+          },
+          {
+              "id": 3,
+              "full": "img/full-3.gif",
+              "thumb": "img/thumb-3.gif"
+          }
+      ],
+      "reviews":[
+          {
+              "stars": 5,
+              "body": "I love this product",
+              "author": "joe2@thomas.com"
+          },
+          {
+              "stars": 1,
+              "body": "This product sucks",
+              "author": "tim2@hater.com"
+          }
+      ]
+  },
+  {
+      "id": 2,
+      "name": "Gem 3",
+      "price": 2.95,
+      "description": "This is the description of the Gem 3.",
+      "canPurchase": true,
+      "soldOut": false,
+      "images":[
+          {
+              "id": 0,
+              "full": "img/full-2.gif",
+              "thumb": "img/thumb-2.gif"
+          },
+          {
+              "id": 1,
+              "full": "img/full-1.gif",
+              "thumb": "img/thumb-1.gif"
+          },
+          {
+              "id": 2,
+              "full": "img/full.gif",
+              "thumb": "img/thumb.gif"
+          },
+          {
+              "id": 3,
+              "full": "img/full-3.gif",
+              "thumb": "img/thumb-3.gif"
+          }
+      ],
+      "reviews":[
+          {
+              "stars": 5,
+              "body": "I love this product",
+              "author": "joe3@thomas.com"
+          },
+          {
+              "stars": 1,
+              "body": "This product sucks",
+              "author": "tim3@hater.com"
+          }
+      ]
+  }
+  ,
+  {
+      "id": 3,
+      "name": "Gem 4",
+      "price": 1.2,
+      "description": "This is the description of the Gem 4.",
+      "canPurchase": true,
+      "soldOut": false,
+      "images":[
+          {
+              "id": 0,
+              "full": "img/full-3.gif",
+              "thumb": "img/thumb-3.gif"
+          },
+          {
+              "id": 1,
+              "full": "img/full-1.gif",
+              "thumb": "img/thumb-1.gif"
+          },
+          {
+              "id": 2,
+              "full": "img/full-2.gif",
+              "thumb": "img/thumb-2.gif"
+          },
+          {
+              "id": 3,
+              "full": "img/full.gif",
+              "thumb": "img/thumb.gif"
+          }
+      ],
+      "reviews":[
+          {
+              "stars": 5,
+              "body": "I love this product",
+              "author": "joe4@thomas.com"
+          },
+          {
+              "stars": 1,
+              "body": "This product sucks",
+              "author": "tim4@hater.com"
+          }
+      ]
+  }
+]

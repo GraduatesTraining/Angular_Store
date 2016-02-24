@@ -1,0 +1,5 @@
+.text-center
+  img.mainImg(ng-src="{{product.images[gallery.current].full}}")
+  .row.gallery(ng-show="product.images.length")
+    .col-md-3.col-sm-6(ng-repeat="image in product.images")
+      img.small(ng-src="{{image.full}}" ng-click="gallery.setCurrentImg(image.id)")

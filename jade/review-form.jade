@@ -1,0 +1,27 @@
+form(name="reviewForm" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate)
+  //Old reviews
+  blockquote
+    b(ng-bind="(review.stars) + ' Stars: '")
+    span(ng-bind="' ' + (review.body)")
+    cite(ng-bind="' - ' + (review.author)")
+
+  // New review
+  .formFields
+    label Stars:
+    select.form-control(ng-model="reviewCtrl.review.stars" required)
+      option(value="1") 1 Star
+      option(value="2") 2 Star
+      option(value="3") 3 Star
+      option(value="4") 4 Star
+      option(value="5") 5 Star
+    br
+    br
+    label Opinion
+    textarea.form-control(ng-model="reviewCtrl.review.body" required)
+    br
+    br
+    label  by:
+    input.form-control(type="email" ng-model="reviewCtrl.review.author" required)
+    br
+    br
+    input.btn.btn-primary.btn-lg.btn-block(type="submit" value="Submit")

@@ -1,0 +1,6 @@
+
+<div class="text-center"><img ng-src="{{product.images[gallery.current].full}}" class="mainImg"/>
+  <div ng-show="product.images.length" class="row gallery">
+    <div ng-repeat="image in product.images" class="col-md-3 col-sm-6"><img ng-src="{{image.full}}" ng-click="gallery.setCurrentImg(image.id)" class="small"/></div>
+  </div>
+</div>

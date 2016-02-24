@@ -1,0 +1,11 @@
+
+<div ng-show="store.showCart" class="text-center">
+  <h1>Cart</h1>
+  <ul class="list-group main">
+    <li ng-repeat="cartProduct in store.cart track by $index" class="list-group-item cartList">
+      <button ng-click="store.deleteToCart(cartProduct)" class="btn cartButton">Delete</button><span ng-bind="cartProduct.name"></span><span ng-bind="cartProduct.price | currency" class="cartPrice"></span>
+    </li>
+    <h3 ng-bind="'Total: ' + (store.totalCart | currency)" class="cartPrice"></h3>
+    <input type="submit" value="Finish" class="btn btn-primary btn-lg btn-block"/>
+  </ul>
+</div>
