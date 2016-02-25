@@ -1,5 +1,14 @@
+/* Filters */
+.filters{
+  width: 70%;
+  margin: auto
+}
+.filter{
+  padding: 0;
+}
+
+/* Product list */
 .main{
-    position: relative;
     width: 70%;
     margin: auto;
     margin-bottom: 10%
