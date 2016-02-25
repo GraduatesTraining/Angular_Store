@@ -1,4 +1,4 @@
 
-<input type="text" placeholder="Search product..." class="form-control"/>
+<input type="text" placeholder="Search product..." ng-model="searchName" class="form-control"/>
 <button ng-click="store.setPriceFilter('-price');store.showChange()" ng-hide="store.show()" class="btn-primary btn-lg">Price high to low</button>
 <button ng-click="store.setPriceFilter('+price');store.showChange()" ng-show="store.show()" class="btn-primary btn-lg">Price low to high</button>

@@ -23,8 +23,8 @@ html(ng-app="store")
     store-filters
       
     // Product list
-    ul.list-group.main.mainList
-      li(class="list-group-item" ng-repeat="product in store.products | orderBy: store.priceFilter()" ng-hide="product.soldOut")
+    ul.list-group.main
+      li(class="list-group-item" ng-repeat="product in store.products | orderBy: store.priceFilter() | filter:searchName" ng-hide="product.soldOut")
       
         // Product title
         h3

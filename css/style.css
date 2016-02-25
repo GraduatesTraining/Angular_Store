@@ -1,79 +1,70 @@
 .main{
     position: relative;
     width: 70%;
-    margin: auto
+    margin: auto;
+    margin-bottom: 10%
 }
 
-.mainList{
-  margin-bottom: 10%
-}
-
-.mainImg{
-    margin-bottom: 3%
-}
-
-.gallery{
-  margin:auto;
-  width: 40%
-}
-
-img.small{
-  width: 80%
-}
-
-.tabs > li.active > a, .tabs > li.active > a:focus, .tabs > li.active > a:hover {
-    background-color: purple
-}
-
-.tabs, .tabs:hover{
-    color: purple
-}
-
-.panel{
-    box-shadow: none
-}
-
-.formFields{
-    width: 70%;
-    margin: auto
-}
-
-select, textarea, input{
-    width: 100%
-}
-
-select{
-    position: relative;
-    height: 30%
-}
-
-.btn-primary, .btn-primary:focus{
-    background-color: darkgrey;
-    border: none;
-    margin: 5% 0 5% 0
-}
-
-.btn-primary:hover{
-    background-color: purple;
-    border: none
-}
-
+/* Cart */
 .cartList{
   padding: 5%
 }
-
 .cartButton{
   float: left
 }
-
 .cartPrice{
   float: right
 }
 
-/*To validate the form*/
+/* Product Images */
+.mainImg{
+    margin-bottom: 3%
+}
+.gallery{
+  margin:auto;
+  width: 40%
+}
+img.small{
+  width: 80%
+}
+
+/* Panel */
+.tabs > li.active > a, .tabs > li.active > a:focus, .tabs > li.active > a:hover {
+    background-color: purple
+}
+.tabs, .tabs:hover{
+    color: purple
+}
+.panel{
+    box-shadow: none
+}
+
+/* Review Form */
+.formFields{
+    width: 70%;
+    margin: auto
+}
+select, textarea, input{
+    width: 100%
+}
+select{
+    position: relative;
+    height: 30%
+}
 .ng-invalid.ng-dirty{
     border-color: red
 }
 .ng-valid.ng-dirty{
     border-color: greenyellow
+}
+
+/* Buttons */
+.btn-primary, .btn-primary:focus{
+    background-color: darkgrey;
+    border: none;
+    margin: 5% 0 5% 0
+}
+.btn-primary:hover{
+    background-color: purple;
+    border: none
 }

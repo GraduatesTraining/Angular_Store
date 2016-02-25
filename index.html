@@ -15,8 +15,8 @@
     <!-- Filters-->
     <store-filters></store-filters>
     <!-- Product list-->
-    <ul class="list-group main mainList">
-      <li ng-repeat="product in store.products | orderBy: store.priceFilter()" ng-hide="product.soldOut" class="list-group-item">
+    <ul class="list-group main">
+      <li ng-repeat="product in store.products | orderBy: store.priceFilter() | filter:searchName" ng-hide="product.soldOut" class="list-group-item">
         <!-- Product title-->
         <h3>
           <product-title></product-title>
